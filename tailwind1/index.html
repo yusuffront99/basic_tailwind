@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600&display=swap" rel="stylesheet">
+    <title>Belajar Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                spacing: {
+                    '13': '3.25rem',
+                },
+                fontFamily: {
+                    inter: ['Inter'],
+                },
+                colors : {
+                    hero: 'green'
+                }
+            }
+          }
+        }
+    </script>
+    <!-- <style type="text/tailwindcss">
+        * {
+            border: 1px solid black;
+        }
+    </style> -->
+</head>
+<body>
+    <h1 class="text-center text-6xl font-bold my-5  "> <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+        Hello world
+      </span></h1>
+
+    <section class="mb-5 bg-gradient-to-l via-yellow-50 from-indigo-500 to-pink-400">
+        <h2>Spacing</h2>
+        <div class="m-5">Margin</div>
+        <div class="px">Padding</div>
+    </section>
+
+    <!-- <section class="mb-5">
+        <h2></h2>
+    </section> -->
+
+    <section class="mb-10 bg-gray-500 mx-2">
+        <h2 class="text-center pt-2">Sizing</h2>
+        <br>
+        <div class="w-28 h-56">Box 1</div>
+        <div class="max-w-screen-md h-5 bg-hero">Box 2</div>
+    </section>
+
+    <section class="mb-10 max-w-3xl mx-auto font-inter">
+        <h2 class="mb-4 text-3xl font-semibold">Belajar Tailwind Dasar</h2>
+        <div>Mar 31</div>
+        <hr>
+        <p class="mb-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam optio accusantium commodi debitis voluptatibus veniam sequi reiciendis ullam necessitatibus laboriosam cum illo obcaecati aperiam, aliquid porro, qui ratione quasi quia nobis rerum. Dicta ullam optio nesciunt accusantium consequuntur ipsam totam, exercitationem temporibus. Repellendus iste in eos aut pariatur cum optio placeat ea? Perspiciatis nihil iure, rem quis quia culpa earum commodi cumque at explicabo incidunt dolorum facilis, ipsa vitae cum quos natus veritatis exercitationem nam, reiciendis voluptas temporibus modi nisi consequuntur! Animi aliquid aut fuga error vero id, repellat iste ad tenetur? Modi minus non quisquam minima. Facilis, nam deleniti? Culpa id deleniti quibusdam, perspiciatis dolor, eos fuga sed placeat enim tempora expedita, impedit soluta explicabo aperiam esse maxime tempore natus accusantium odio doloremque molestias! Accusantium debitis velit laboriosam maiores distinctio ipsam libero vel nesciunt ipsum sit temporibus, sequi dicta consequatur inventore, impedit maxime omnis accusamus iste, cum deserunt rem.
+        </p>
+        <blockquote class="mb-4 italic font-thin text-sm">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit nobis debitis ipsum, soluta quos rem expedita fugiat dignissimos tenetur.
+        </blockquote>
+        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde, minima iste quibusdam laborum distinctio a, sequi omnis dolorem aut soluta, sapiente vitae. Culpa laborum dolorum ad dolorem, dolore odit. Ratione excepturi commodi aut, unde eveniet eligendi obcaecati dolor enim iste <a href="" class="underline font-semibold italic text-blue-500">provident velit soluta cupiditate</a>, laboriosam quia animi aperiam, sed nulla nobis facere nam. Non?</p>
+    </section>
+</body>
+</html>
